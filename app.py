@@ -25,7 +25,6 @@ def predict_api():
     return jsonify(output)
 
 
-
 @app.route('/predict', methods=['POST'])
 def predict():
     data = [float(x) for x in request.form.values()]
